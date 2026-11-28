@@ -2,7 +2,7 @@ from flask import jsonify
 
 
 def succes_response(data=None, message=None, code=200):
-    payload = {"status": "succes"}
+    payload = {"status": "success"}
     if message:
         payload["message"] = message
     if data is not None:
